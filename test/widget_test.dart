@@ -1,30 +1,38 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:katalog_perpustakaan/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Aplikasi menampilkan halaman utama dan navigasi', (tester) async {
+    await tester.pumpWidget(const KatalogBukuApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.text('ENJOY READING'), findsOneWidget);
+    expect(find.text('Home'), findsOneWidget);
+    expect(find.text('Borrow'), findsOneWidget);
+    expect(find.text('Profil Saya'), findsOneWidget);
+    expect(find.text('Favorite'), findsOneWidget);
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  testWidgets('Menu Book List membuka katalog dan detail buku', (tester) async {
+    await tester.pumpWidget(const KatalogBukuApp());
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    await tester.tap(find.text('Book List'));
+    await tester.pumpAndSettle();
+    expect(find.text('DAFTAR BUKU'), findsOneWidget);
+
+    final judulBuku = find.text('Jack and the Beanstalk');
+    await tester.ensureVisible(judulBuku);
+    await tester.tap(judulBuku);
+    await tester.pumpAndSettle();
+    expect(find.text('Detail Buku'), findsOneWidget);
+    expect(find.text('Deskripsi Buku'), findsOneWidget);
+  });
+
+  testWidgets('Navigasi Borrow dapat dibuka', (tester) async {
+    await tester.pumpWidget(const KatalogBukuApp());
+
+    await tester.tap(find.text('Borrow'));
+    await tester.pumpAndSettle();
+    expect(find.text('BUKU PINJAMAN'), findsOneWidget);
+    expect(find.text('Belum ada buku yang dipinjam.'), findsOneWidget);
   });
 }
