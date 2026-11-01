@@ -176,7 +176,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             activeIcon: Icon(Icons.person),
-            label: 'Personal',
+            label: 'Profil Saya',
           ),
 
           BottomNavigationBarItem(
