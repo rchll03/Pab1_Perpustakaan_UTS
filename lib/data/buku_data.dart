@@ -127,6 +127,91 @@ var daftarBuku = [
     tebalHalaman: '544 halaman',
     isbn: '9786231066329',
   ),
+  
+  Buku(
+    judul: 'The Alchemist',
+    penulis: 'Paulo Coelho',
+    kategori: 'Fiksi',
+    gambar: 'images/Buku10.jpg',
+    deskripsi:
+        'The Alchemist mengisahkan Santiago, seorang penggembala muda yang melakukan perjalanan untuk mencari harta karun dan menemukan makna kehidupan serta impiannya.',
+    penerbit: 'HarperOne',
+    kotaPenerbit: 'San Francisco',
+    tahunTerbit: '2014',
+    tebalHalaman: '208 Halaman',
+    isbn: '9780062315007',
+  ),
+
+  Buku(
+    judul: 'Negeri 5 Menara',
+    penulis: 'Ahmad Fuadi',
+    kategori: 'Fiksi',
+    gambar: 'images/Buku11.jpg',
+    deskripsi:
+        'Negeri 5 Menara menceritakan perjalanan Alif dan lima sahabatnya di sebuah pesantren. Mereka belajar tentang persahabatan, kedisiplinan, kerja keras, dan keberanian untuk mengejar cita-cita.',
+    penerbit: 'Gramedia Pustaka Utama',
+    kotaPenerbit: 'Jakarta',
+    tahunTerbit: '2009',
+    tebalHalaman: '423 Halaman',
+    isbn: '9789792248616',
+  ),
+
+  Buku(
+    judul: 'Laskar Pelangi',
+    penulis: 'Andrea Hirata',
+    kategori: 'Fiksi',
+    gambar: 'images/Buku12.jpg',
+    deskripsi:
+        'Laskar Pelangi mengisahkan perjuangan sepuluh anak di Belitung yang berusaha mendapatkan pendidikan meskipun menghadapi keterbatasan ekonomi dan fasilitas sekolah.',
+    penerbit: 'Bentang Pustaka',
+    kotaPenerbit: 'Yogyakarta',
+    tahunTerbit: '2005',
+    tebalHalaman: '529 Halaman',
+    isbn: '9789793062792',
+  ),
+
+  Buku(
+    judul: 'The Da Vinci Code',
+    penulis: 'Dan Brown',
+    kategori: 'Misteri & Thriller Psikologis',
+    gambar: 'images/Buku13.jpg',
+    deskripsi:
+        'The Da Vinci Code mengikuti Robert Langdon dan Sophie Neveu dalam mengungkap misteri pembunuhan di Museum Louvre yang berkaitan dengan simbol, karya seni, dan rahasia sejarah.',
+    penerbit: 'Doubleday',
+    kotaPenerbit: 'New York',
+    tahunTerbit: '2003',
+    tebalHalaman: '454 Halaman',
+    isbn: '9780385504201',
+  ),
+
+  Buku(
+    judul: 'Percy Jackson and the Lightning Thief',
+    penulis: 'Rick Riordan',
+    kategori: 'Petualangan Dan Fantasi',
+    gambar: 'images/Buku14.jpg',
+    deskripsi:
+        'Percy Jackson menemukan bahwa dirinya merupakan keturunan dewa Yunani. Ia kemudian menjalani petualangan berbahaya untuk menemukan petir Zeus yang hilang dan mencegah peperangan para dewa.',
+    penerbit: 'Miramax Books',
+    kotaPenerbit: 'New York',
+    tahunTerbit: '2005',
+    tebalHalaman: '377 Halaman',
+    isbn: '9780786856299',
+  ),
+
+  Buku(
+    judul: 'The Hunger Games',
+    penulis: 'Suzanne Collins',
+    kategori: 'Petualangan Dan Fantasi',
+    gambar: 'images/Buku15.jpg',
+    deskripsi:
+        'The Hunger Games mengisahkan Katniss Everdeen yang terpaksa mengikuti kompetisi mematikan di negara Panem. Ia harus bertahan hidup sambil menghadapi ketidakadilan pemerintahan.',
+    penerbit: 'Scholastic Press',
+    kotaPenerbit: 'New York',
+    tahunTerbit: '2008',
+    tebalHalaman: '374 Halaman',
+    isbn: '9780439023481',
+  ),
+
 ];
 
 final List<Map<String, dynamic>> daftarKategori = [
