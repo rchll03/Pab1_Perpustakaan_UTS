@@ -5,6 +5,13 @@ class Buku {
   final String gambar;
   final String deskripsi;
 
+  // Informasi detail penerbitan buku
+  final String? penerbit;
+  final String? kotaPenerbit;
+  final String? tahunTerbit;
+  final String? tebalHalaman;
+  final String? isbn;
+
   bool dipinjam;
   bool favorit;
 
@@ -14,6 +21,14 @@ class Buku {
     required this.kategori,
     required this.gambar,
     required this.deskripsi,
+
+    // Informasi tambahan bersifat opsional
+    this.penerbit,
+    this.kotaPenerbit,
+    this.tahunTerbit,
+    this.tebalHalaman,
+    this.isbn,
+
     this.dipinjam = false,
     this.favorit = false,
   });
